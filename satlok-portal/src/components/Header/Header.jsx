@@ -1,0 +1,75 @@
+
+import logo from "../../assets/logo.png";
+import { ChevronDown, Menu } from "lucide-react";
+
+export default function Header() {
+  return (
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-7xl">
+      <div className="h-14 bg-white border border-[#E5E7EB] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.50)] flex items-center justify-between">
+
+        {/* Logo */}
+        <div className="flex items-center">
+          <img
+            src={logo}
+            alt="Satlok Foundation"
+            className=" px-6 h-25 w-auto object-contain"
+          />
+        </div>
+
+        {/* Navigation */}
+        <nav className="hidden lg:flex items-center gap-12">
+
+          <button className="flex items-center gap-1 text-[15px] font-medium text-[#001032] hover:text-blue-600 transition-all duration-300">
+            Auxiliaries
+            <ChevronDown size={14} strokeWidth={2} />
+          </button>
+
+          <button className="flex items-center gap-1 text-[15px] font-medium text-[#001032] hover:text-blue-600 transition-all duration-300">
+            Wisdom
+            <ChevronDown size={14} strokeWidth={2} />
+          </button>
+
+          <button className="flex items-center gap-1 text-[15px] font-medium text-[#001032] hover:text-blue-600 transition-all duration-300">
+            Resources
+            <ChevronDown size={14} strokeWidth={2} />
+          </button>
+
+        </nav>
+
+        {/* Right Side */}
+        <div className="hidden lg:flex items-center gap-6">
+
+          <button className="text-[15px] font-medium text-[#001032] underline underline-offset-4 hover:text-blue-600 transition">
+            Sign in
+          </button>
+
+          <button
+            className="
+              h-14
+              min-w-[105px]
+              px-12
+              rounded-full
+              bg-white
+              border border-[#E5E7EB]
+              text-[#001032]
+              font-semibold
+              shadow-[0_2px_10px_rgba(0,0,0,0.18)]
+              hover:shadow-[0_5px_16px_rgba(0,0,0,0.22)]
+              transition-all
+              duration-300
+            "
+          >
+            Sign up
+          </button>
+
+        </div>
+
+        {/* Mobile Menu */}
+        <button className="px-6 lg:hidden text-[#001032]">
+          <Menu size={28} />
+        </button>
+
+      </div>
+    </header>
+  );
+}
