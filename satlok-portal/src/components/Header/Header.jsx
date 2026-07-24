@@ -69,7 +69,7 @@ export default function Header() {
 
           <button className="w-14 h-14 flex items-center justify-center">
             <Bell
-              size={24}
+              size={20}
               strokeWidth={1.8}
               className="text-[#555]"
             />
@@ -79,7 +79,7 @@ export default function Header() {
 
           <button className="w-14 h-14 flex items-center justify-center">
             <Menu
-              size={30}
+              size={23}
               strokeWidth={2}
               className="text-[#555]"
             />

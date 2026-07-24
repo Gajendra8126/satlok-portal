@@ -16,11 +16,12 @@ export default function Knowledge() {
     "bg-white rounded-2xl border border-[#D8D8D8] shadow-[0_4px_12px_rgba(0,0,0,0.12)]";
 
   return (
-    <section className="bg-white py-12 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
-        {/* Banner */}
+    <section className="bg-white py-8 md:py-24">
+      {/* Banner */}
         <div className="w-full h-40 md:h-56 rounded-3xl bg-[#9A9CF5]" />
 
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        
         {/* Desktop Heading */}
         <h2 className="hidden md:block text-start text-4xl font-semibold mt-12 mb-10">
           Explore Guruji&apos;s Knowledge
@@ -146,7 +147,7 @@ export default function Knowledge() {
         </div>
 
         {/* Explore Button */}
-        <div className="mt-12 flex justify-center">
+        <div className="mt-6 flex justify-center">
           <button className="border border-[#002C3E] text-[#002C3E] px-8 py-3 rounded-md hover:bg-[#002C3E] hover:text-white transition">
             Explore All
           </button>

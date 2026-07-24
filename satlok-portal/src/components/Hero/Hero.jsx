@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="mt-3 text-[14px] leading-8 text-white/95"
+            className="mt-3 text-[12px] leading-8 text-white/95"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,.4)" }}
           >
             Fostering well-being through breath,
@@ -30,7 +30,7 @@ export default function Hero() {
             1981
           </p>
 
-          <button className="mt-10 w-[200px] h-[64px] rounded-lg bg-white text-[#244D7D] text-[22px] font-medium shadow-lg">
+          <button className="mt-10 w-[143px] h-[45.54px] rounded-lg bg-white text-[#244D7D] text-[22px] font-medium shadow-lg">
             Explore
           </button>
         </div>

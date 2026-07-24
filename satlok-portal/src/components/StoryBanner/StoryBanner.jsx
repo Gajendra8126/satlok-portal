@@ -7,7 +7,7 @@ export default function Banner() {
         <div className="relative md:hidden h-[350px] rounded-2xl overflow-hidden bg-white shadow-md py-20">
 
           {/* Left Gradient */}
-          <div className="absolute inset-y-0 left-0 w-[55%] bg-gradient-to-r from-[#355760] via-[#78939B] to-transparent" />
+          <div className="absolute inset-y-0 left-0 w-[55%] bg-[linear-gradient(270deg,_#FFFFFF_41.35%,_#002B31_94.71%)]" />
 
           {/* Text */}
           <div className="relative z-10 h-full flex items-center">

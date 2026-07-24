@@ -5,7 +5,7 @@ export default function OttPlatform() {
     "bg-white rounded-[22px] border border-[#D9D9D9] shadow-[0_6px_16px_rgba(0,0,0,0.18)]";
 
   return (
-    <section className="w-full py-12 md:py-24 bg-white overflow-hidden">
+    <section className="w-full py-6 md:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
 
@@ -17,7 +17,7 @@ export default function OttPlatform() {
               {[1, 2, 3, 4].map((item) => (
                 <div
                   key={item}
-                  className={`${cardStyle} flex-shrink-0 w-[90%] h-[160px] snap-center`}
+                  className={`${cardStyle} flex-shrink-0 w-[100%] h-[160px] snap-center`}
                 />
               ))}
 

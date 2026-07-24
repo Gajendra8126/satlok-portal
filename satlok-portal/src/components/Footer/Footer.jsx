@@ -42,16 +42,16 @@ export default function Footer() {
         <img
           src={logo}
           alt="Satlok Foundation"
-          className="h-10 w-auto ml-17 mb-5"
+          className="h-8 w-auto ml-5 mb-10"
         />
 
         {/* Buttons */}
         <div className="flex gap-4 ">
-          <button className="w-28 h-11 rounded-lg bg-[#A4AAB8] text-white font-semibold">
+          <button className="w-25 h-8 rounded-lg bg-[#A4AAB8] text-white ">
             Sign in
           </button>
 
-          <button className="w-28 h-11 rounded-lg bg-[#001A4D] text-white font-semibold">
+          <button className="w-25 h-8 rounded-lg bg-[#001A4D] text-white  ">
             Sign up
           </button>
         </div>
@@ -78,20 +78,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 border-t border-b border-gray-300 py-4 flex items-center justify-between">
+        <div className="mt-12 border-t border-b border-gray-300 py-2 flex items-center justify-between">
 
-          <p className="text-[11px] text-[#4A5568] leading-5">
+          <p className="text-[7px] text-[#4A5568] leading-5">
             Copyrights 2025 All Rights Reserved.
-            <br />
+            
             Satlok Foundation Pvt. Ltd.
           </p>
 
-          <div className="flex gap-3">
-            <button className="w-8 h-8 border rounded-md flex items-center justify-center">
+          <div className="flex gap-1">
+            <button className="w-5 h-5 border rounded-md flex items-center justify-center">
               <FaLinkedinIn size={18} />
             </button>
 
-            <button className="w-8 h-8 flex items-center justify-center">
+            <button className="w-5 h-5 flex items-center justify-center">
               <X size={24} />
             </button>
           </div>
@@ -159,13 +159,13 @@ export default function Footer() {
         <div className="mt-12 border-t border-b border-gray-300 py-4 flex items-center justify-between">
 
           <p className="text-[11px] text-[#4A5568] leading-5">
-            Copyrights 2025 All Rights Reserved.
+            Copyrights 2025 All Rights Reserved. Satlok Foundation Pvt. Ltd.
             
-            Satlok Foundation Pvt. Ltd.
+            
           </p>
 
           <div className="flex gap-3">
-            <button className="w-8 h-8 border rounded-md flex items-center justify-center">
+            <button className="w-5 h-5 border rounded-md flex items-center justify-center">
               <FaLinkedinIn size={18} />
             </button>
 

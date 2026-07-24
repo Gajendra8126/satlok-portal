@@ -30,7 +30,7 @@ function FaqItem({ item, isOpen, onToggle }) {
     <div className="border-b border-gray-200">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center py-5 text-left group"
+        className="w-full flex justify-between items-center py-4 text-left group"
       >
         <span className="text-[#111827] font-medium text-sm md:text-base pr-4">
           {item.question}
@@ -70,17 +70,17 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full py-12 md:py-0 bg-white">
+    <section className="w-full py-3 md:py-0 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-10"
+          className="mb-3"
         >
           {/* Mobile Heading */}
-          <h2 className="block md:hidden text-[24px] font-semibold text-[#111827]">
+          <h2 className="block md:hidden text-[22px] font-semibold text-[#111827]">
             Here's what users usally ask
           </h2>
 
