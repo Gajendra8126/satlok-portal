@@ -122,7 +122,7 @@ export default function Media() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[24px] md:text-4xl font-semibold text-[#111827] ml-5 mb-8 md:mb-10"
+          className="text-[24px] md:text-4xl font-semibold text-[#111827] ml-7 mb-5 md:mb-10"
         >
           Media
         </motion.h2>
@@ -133,7 +133,7 @@ export default function Media() {
           {mediaItems.slice(0,3).map((item)=>(
             <div
               key={item.id}
-              className="bg-white h-[258px] shadow-[0px_0px_12px_0px_#000000BF] rounded-[20px] border border-[#D8D8D8] shadow-lg p-4 flex items-center justify-between"
+              className="bg-white h-[240px] shadow-[0px_0px_12px_0px_#000000BF] rounded-[20px] border border-[#D8D8D8] shadow-lg p-4 flex items-center justify-between"
             >
 
               {/* Left */}

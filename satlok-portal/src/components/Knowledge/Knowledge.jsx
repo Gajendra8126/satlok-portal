@@ -18,7 +18,7 @@ export default function Knowledge() {
   return (
     <section className="bg-white py-8 md:py-24">
       {/* Banner */}
-        <div className="w-full h-40 md:h-56 rounded-3xl bg-[#9A9CF5]" />
+        <div className="w-full h-50 md:h-56 rounded-3xl bg-[#9A9CF5]" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         

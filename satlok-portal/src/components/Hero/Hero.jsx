@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p
-            className="mt-3 text-[12px] leading-8 text-white/95"
+            className="mt-3 text-[12px] leading-4 text-white/95"
             style={{ textShadow: "0 2px 6px rgba(0,0,0,.4)" }}
           >
             Fostering well-being through breath,
