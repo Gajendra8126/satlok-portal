@@ -70,7 +70,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-white">
+    <section className="w-full py-12 md:py-0 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}
         <motion.div
@@ -79,10 +79,22 @@ export default function Faq() {
           viewport={{ once: true }}
           className="mb-10"
         >
-          <h2 className="text-4xl md:text-5xl font-semibold text-[#111827]">
+          {/* Mobile Heading */}
+          <h2 className="block md:hidden text-[24px] font-semibold text-[#111827]">
+            Here's what users usally ask
+          </h2>
+
+          {/* Desktop Heading */}
+          <h2 className="hidden md:block text-4xl font-semibold text-[#111827]">
             FAQ
           </h2>
-          <p className="text-gray-400 text-lg mt-2">Trust &amp; Safety</p>
+
+          
+
+          {/* Desktop Subtitle */}
+          <p className="hidden md:block text-lg text-gray-400 mt-2">
+            Trust &amp; Safety
+          </p>
         </motion.div>
 
         {/* Two-column accordion grid */}

@@ -115,18 +115,74 @@ export default function Media() {
   };
 
   return (
-    <section className="w-full py-12 md:py-24 bg-white overflow-hidden">
+    <section className="w-full py-12 md:py-0 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-semibold text-[#111827] mb-10"
+          className="text-[24px] md:text-4xl font-semibold text-[#111827] mb-8 md:mb-10"
         >
           Media
         </motion.h2>
+        {/* ================= MOBILE ================= */}
 
+        <div className="md:hidden space-y-5">
+          
+          {mediaItems.slice(0,3).map((item)=>(
+            <div
+              key={item.id}
+              className="bg-white rounded-[20px] border border-[#D8D8D8] shadow-lg p-4 flex items-center justify-between"
+            >
+
+              {/* Left */}
+              <div className="flex-1 pr-3">
+
+                <h3 className="text-[14px] leading-5 font-medium text-[#111827]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-5 text-[11px] text-gray-500">
+                  {item.category}
+                </p>
+
+              </div>
+
+              {/* Right */}
+              <div className="flex-shrink-0">
+
+                <div className="w-28 h-28 rounded-full bg-white border border-[#D8D8D8] shadow-lg flex items-center justify-center">
+
+                  <div className="w-12 h-12 rounded-full border-[3px] border-black flex items-center justify-center">
+
+                    <Play
+                      size={18}
+                      fill="currentColor"
+                      className="ml-1"
+                    />
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          ))}
+
+          <div className="flex justify-center pt-2">
+
+            <button className="border border-[#002C3E] text-[#002C3E] px-8 py-3 rounded-md text-sm">
+              View All
+            </button>
+
+          </div>
+
+        </div>
+
+        {/* ================= DESKTOP ================= */}
+        <div className="hidden md:block">
         {/* Cards row - smooth horizontal scroll */}
         <div
           ref={scrollRef}
@@ -184,6 +240,7 @@ export default function Media() {
               }`}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>

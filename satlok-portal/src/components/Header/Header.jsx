@@ -1,18 +1,18 @@
 
 import logo from "../../assets/logo.png";
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu, Bell } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[94%] max-w-7xl">
-      <div className="h-14 bg-white border border-[#E5E7EB] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.50)] flex items-center justify-between">
+    <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
+      <div className="h-[55px] md:h-14 bg-white border border-[#E5E7EB] rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.22)] flex items-center justify-between pl-3 md:px-0">
 
         {/* Logo */}
         <div className="flex items-center">
           <img
             src={logo}
             alt="Satlok Foundation"
-            className=" px-6 h-25 w-auto object-contain"
+            className="h-5 md:h-7 w-auto object-contain md:px-6 ml-2"
           />
         </div>
 
@@ -65,9 +65,27 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <button className="px-6 lg:hidden text-[#001032]">
-          <Menu size={28} />
-        </button>
+        <div className="lg:hidden flex items-center rounded-full bg-white shadow-[0_6px_18px_rgba(0,0,0,0.18)]">
+
+          <button className="w-14 h-14 flex items-center justify-center">
+            <Bell
+              size={24}
+              strokeWidth={1.8}
+              className="text-[#555]"
+            />
+          </button>
+
+          <div className="w-px h-8 bg-gray-200" />
+
+          <button className="w-14 h-14 flex items-center justify-center">
+            <Menu
+              size={30}
+              strokeWidth={2}
+              className="text-[#555]"
+            />
+          </button>
+
+        </div>
 
       </div>
     </header>
