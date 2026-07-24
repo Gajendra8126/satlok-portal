@@ -165,7 +165,7 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-3">
-            <button className="w-5 h-5 border rounded-md flex items-center justify-center">
+            <button className="w-8 h-8 border rounded-md flex items-center justify-center">
               <FaLinkedinIn size={18} />
             </button>
 
