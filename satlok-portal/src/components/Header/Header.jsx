@@ -1,10 +1,26 @@
 
 import logo from "../../assets/logo.png";
 import { ChevronDown, Menu, Bell } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl">
+    <header className={`fixed left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl transition-all duration-300 ${
+    isScrolled ? "top-0" : "top-4 md:top-6"
+  }`}
+>
       <div className="h-[55px] md:h-14 bg-white border border-[#E5E7EB] rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.22)] flex items-center justify-between pl-3 md:px-0">
 
         {/* Logo */}

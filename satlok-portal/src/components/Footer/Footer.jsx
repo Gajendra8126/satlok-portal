@@ -42,7 +42,7 @@ export default function Footer() {
         <img
           src={logo}
           alt="Satlok Foundation"
-          className="h-8 w-auto mb-10"
+          className="h-8 w-auto mb-10 ml-6"
         />
 
         {/* Buttons */}
