@@ -36,7 +36,7 @@ export default function Knowledge() {
                 <button
                   key={tab}
                   onClick={() => setActiveCategory(tab)}
-                  className={`flex-1 py-4 text-lg font-medium transition-all ${
+                  className={`flex-1 py-2 text-lg font-medium transition-all ${
                     activeCategory === tab
                       ? "bg-[#002C3E] text-white rounded-3xl"
                       : "text-black"
@@ -55,7 +55,7 @@ export default function Knowledge() {
                 <button
                   key={tab}
                   onClick={() => setActiveCategory(tab)}
-                  className={`flex-1 py-4 text-lg font-medium transition-all ${
+                  className={`flex-1 py-2 text-lg font-medium transition-all ${
                     activeCategory === tab
                       ? "bg-[#002C3E] text-white rounded-full"
                       : "text-black"
@@ -148,12 +148,13 @@ export default function Knowledge() {
 
         {/* Explore Button */}
         <div className="mt-6 flex justify-center">
-          <button className="border border-[#002C3E] text-[#002C3E] px-8 py-3 rounded-md hover:bg-[#002C3E] hover:text-white transition">
+          <button className="border border-[#002C3E] text-[#002C3E] px-8 py-2 rounded-md hover:bg-[#002C3E] hover:text-white transition">
             Explore All
           </button>
         </div>
       </div>
-      
+    
     </section>
+    
   );
 }

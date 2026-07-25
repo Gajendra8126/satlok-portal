@@ -115,14 +115,15 @@ export default function Media() {
   };
 
   return (
-    <section className="w-full py-4 md:py-0 bg-white overflow-hidden">
+    <section className="w-full  md:py-0 bg-white overflow-hidden">
+      <hr className="mb-4" />
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[24px] md:text-4xl font-semibold text-[#111827] ml-7 mb-5 md:mb-10"
+          className="text-[24px] md:text-4xl font-semibold text-[#111827]  mb-5 md:mb-10"
         >
           Media
         </motion.h2>
@@ -133,7 +134,7 @@ export default function Media() {
           {mediaItems.slice(0,3).map((item)=>(
             <div
               key={item.id}
-              className="bg-white h-[240px] shadow-[0px_0px_12px_0px_#000000BF] rounded-[20px] border border-[#D8D8D8] shadow-lg p-4 flex items-center justify-between"
+              className="bg-white h-[180px] shadow-[0px_0px_12px_0px_#000000BF] rounded-[20px] border border-[#D8D8D8] shadow-lg p-4 flex items-center justify-between"
             >
 
               {/* Left */}
@@ -173,7 +174,7 @@ export default function Media() {
 
           <div className="flex justify-center pt-2">
 
-            <button className="border border-[#002C3E] text-[#002C3E] px-8 py-3 rounded-md text-sm">
+            <button className="border border-[#002C3E] text-[#002C3E] px-8 py-2 rounded-md text-sm">
               View All
             </button>
 

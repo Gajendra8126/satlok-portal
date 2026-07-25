@@ -42,16 +42,16 @@ export default function Footer() {
         <img
           src={logo}
           alt="Satlok Foundation"
-          className="h-8 w-auto ml-5 mb-10"
+          className="h-8 w-auto mb-10"
         />
 
         {/* Buttons */}
         <div className="flex gap-4 ">
-          <button className="w-25 h-8 rounded-lg bg-[#A4AAB8] text-white ">
+          <button className="w-22 h-8 rounded-sm bg-[#A4AAB8] text-white text-[14px]">
             Sign in
           </button>
 
-          <button className="w-25 h-8 rounded-lg bg-[#001A4D] text-white  ">
+          <button className="w-22 h-8 rounded-sm bg-[#001A4D] text-white  font-size text-[14px]">
             Sign up
           </button>
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
               key={item.title}
               className="w-full flex items-center justify-between text-left"
             >
-              <span className="text-[16px] font-medium text-[#001032]">
+              <span className="text-[14px] font-medium text-[#001032]">
                 {item.title}
               </span>
 
@@ -186,7 +186,7 @@ export default function Footer() {
           Disclaimer:
         </h4>
 
-        <p className="text-[11px] md:text-[13px] leading-5 md:leading-6 text-[#5B6472]">
+        <p className="text-[11px] md:text-[11px] leading-5 md:leading-6 text-[#5B6472]">
           The information contained herein is provided for informational and
           discussion purposes only and is not intended to be a recommendation
           for any investment, service, product, or other advice of any kind.
@@ -197,13 +197,13 @@ export default function Footer() {
           minimum investment, fees and expenses of such transaction.
         </p>
 
-        <p className="mt-5 text-[11px] md:text-[13px] leading-5 md:leading-6 text-[#5B6472]">
+        <p className="mt-5 text-[11px] md:text-[11px] leading-5 md:leading-6 text-[#5B6472]">
           Quotes included in these materials related to Satlok Foundation's
           services should not be construed in any way as an endorsement of
           any advice, analysis, or other service rendered to its clients.
         </p>
 
-        <p className="mt-5 text-[11px] md:text-[13px] leading-5 md:leading-6 text-[#5B6472]">
+        <p className="mt-5 text-[11px] md:text-[11px] leading-5 md:leading-6 text-[#5B6472]">
           * Assets on platform refers to the amount of money being deployed
           through our services. This does not refer to any amount of money
           being deployed with or managed by Satlok Foundation.

@@ -30,7 +30,7 @@ function FaqItem({ item, isOpen, onToggle }) {
     <div className="border-b border-gray-200">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center py-4 text-left group"
+        className="w-full flex justify-between items-center py-3 text-left group"
       >
         <span className="text-[#111827] font-medium text-sm md:text-base pr-4">
           {item.question}
@@ -80,7 +80,7 @@ export default function Faq() {
           className="mb-3"
         >
           {/* Mobile Heading */}
-          <h2 className="block md:hidden text-[22px] font-semibold text-[#111827]">
+          <h2 className="block md:hidden text-[20px] font-semibold text-[#111827]">
             Here's what users usally ask
           </h2>
 
