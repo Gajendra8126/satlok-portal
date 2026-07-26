@@ -1,6 +1,7 @@
 import logo from "../../assets/logo.png";
 import { ChevronDown, X } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 export default function Footer() {
   const linkColumns = [
     {
@@ -29,7 +30,7 @@ export default function Footer() {
       ],
     },
   ];
-
+  const navigate = useNavigate();
   return (
     <footer className="bg-white border-t border-gray-200">
       
@@ -47,7 +48,9 @@ export default function Footer() {
 
         {/* Buttons */}
         <div className="flex gap-4 ">
-          <button className="w-22 h-8 rounded-sm bg-[#A4AAB8] text-white text-[14px]">
+          <button 
+            onClick={() => navigate("/login")}
+            className="w-22 h-8 rounded-sm bg-[#A4AAB8] text-white text-[14px]">
             Sign in
           </button>
 

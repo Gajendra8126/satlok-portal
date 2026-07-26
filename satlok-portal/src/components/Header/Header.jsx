@@ -2,9 +2,11 @@
 import logo from "../../assets/logo.png";
 import { ChevronDown, Menu, Bell } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +57,9 @@ export default function Header() {
         {/* Right Side */}
         <div className="hidden lg:flex items-center gap-6">
 
-          <button className="text-[15px] font-medium text-[#001032] underline underline-offset-4 hover:text-blue-600 transition">
+          <button 
+            onClick={() => navigate("/login")}
+            className="text-[15px] font-medium text-[#001032] underline underline-offset-4 hover:text-blue-600 transition">
             Sign in
           </button>
 
