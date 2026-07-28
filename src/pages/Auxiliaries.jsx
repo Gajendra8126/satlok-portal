@@ -1,4 +1,4 @@
-import Header from "../layout/Header";
+import Header from "../Layout/Header";
 import Footer from "../layout/Footer";
 
 import Hero from "../layout/Hero";
@@ -12,7 +12,7 @@ import StoryBanner from "../components/StoryBanner/StoryBanner";
 
 import Faq from "../layout/Faq";
 
-export default function Ausxiliarie() {
+export default function Auxiliaries() {
   return (
     <>
       <Header />
