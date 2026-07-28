@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import ApplicationForm from "../components/Auth/ApplicationForm";
+import AuthLayout from "../layout/AuthLayout";
+import ApplicationForm from "../components/auth/ApplicationForm";
 
 export default function Application() {
   return (

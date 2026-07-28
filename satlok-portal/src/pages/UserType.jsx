@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import UserTypeCards from "../components/Auth/UserTypeCards";
+import AuthLayout from "../layout/AuthLayout";
+import UserTypeCards from "../components/auth/UserTypeCards";
 
 export default function UserType() {
   return (

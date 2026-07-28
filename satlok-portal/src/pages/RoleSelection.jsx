@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import RoleSelectionForm from "../components/Auth/RoleSelectionForm";
+import AuthLayout from "../layout/AuthLayout";
+import RoleSelectionForm from "../components/auth/RoleSelectionForm";
 
 export default function RoleSelection() {
   return (

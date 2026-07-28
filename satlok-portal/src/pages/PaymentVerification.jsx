@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import PaymentVerificationForm from "../components/Auth/PaymentVerificationForm";
+import AuthLayout from "../layout/AuthLayout";
+import PaymentVerificationForm from "../components/auth/PaymentVerificationForm";
 
 export default function PaymentVerification() {
   return (

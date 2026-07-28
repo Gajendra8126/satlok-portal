@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import DepartmentSelectionForm from "../components/Auth/DepartmentSelectionForm";
+import AuthLayout from "../layout/AuthLayout";
+import DepartmentSelectionForm from "../components/auth/DepartmentSelectionForm";
 
 export default function DepartmentSelection() {
   return (

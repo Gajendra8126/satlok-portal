@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import LocationSelectionForm from "../components/Auth/LocationSelectionForm";
+import AuthLayout from "../layout/AuthLayout";
+import LocationSelectionForm from "../components/auth/LocationSelectionForm";
 
 export default function LocationSelection() {
   return (

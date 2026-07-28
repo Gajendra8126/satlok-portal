@@ -1,5 +1,4 @@
-
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 import { ChevronDown, Menu, Bell } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

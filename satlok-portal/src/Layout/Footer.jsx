@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../assets/logo.png";
 import { ChevronDown, X } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";

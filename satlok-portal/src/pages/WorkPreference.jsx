@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import WorkPreferenceForm from "../components/Auth/WorkPreferenceForm";
+import AuthLayout from "../layout/AuthLayout";
+import WorkPreferenceForm from "../components/auth/WorkPreferenceForm";
 
 export default function WorkPreference() {
   return (

@@ -1,25 +1,45 @@
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Knowledge from "../components/Knowledge/Knowledge";
-import Media from "../components/Media/Media";
-import OttPlatform from "../components/OttPlatform/OttPlatform";
-import StoryBanner from "../components/StoryBanner/StoryBanner";
-import Faq from "../components/Faq/Faq";
-import Footer from "../components/Footer/Footer";
+import Hero from "../layout/Hero";
+import Header from "../layout/Header";
+// import FeatureHighlights from "../components/home/FeatureHighlights";
+import QuickLinks from "../components/home/QuickLinks";
+import AboutFoundation from "../components/home/AboutFoundation";
+import FoundationIntro from "../components/home/FoundationIntro";
+import CausesSection from "../components/home/CausesSection";
+import VisionSection from "../components/home/VisionSection";
+import Testimonials from "../components/home/Testimonials";
+// import StatisticsSection from "../components/home/StatisticsSection";
+import JoinCards from "../components/home/JoinCards";
+import ExperienceGallery from "../components/home/ExperienceGallery";
+import QuoteSection from "../components/home/QuoteSection";
+import Faq from "../layout/Faq";
+import Footer from "../layout/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-white overflow-x-hidden">
+    <>
       <Header />
-      <main>
-        <Hero />
-        <Knowledge />
-        <Media />
-        <OttPlatform />
-        <StoryBanner />
-        <Faq />
-      </main>
+      <Hero />
+      {/* <FeatureHighlights /> */}
+      <QuickLinks />
+
+       <AboutFoundation />
+       <FoundationIntro />
+      <CausesSection />
+
+      <VisionSection />
+
+      <Testimonials />
+      <AboutFoundation />
+      {/* <StatisticsSection /> */}
+
+      <JoinCards />
+
+      <ExperienceGallery />
+
+      <QuoteSection />
+
+      <Faq />  
       <Footer />
-    </div>
+    </>
   );
-}
+}

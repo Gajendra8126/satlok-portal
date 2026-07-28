@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import SideCards from "../components/Auth/SideCards";
+import AuthLayout from "../layout/AuthLayout";
+import SideCards from "../components/auth/SideCards";
 
 export default function SideSelection() {
   return (

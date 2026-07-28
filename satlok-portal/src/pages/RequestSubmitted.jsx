@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import RequestSubmittedCard from "../components/Auth/RequestSubmittedCard";
+import AuthLayout from "../layout/AuthLayout";
+import RequestSubmittedCard from "../components/auth/RequestSubmittedCard";
 
 export default function RequestSubmitted() {
   return (

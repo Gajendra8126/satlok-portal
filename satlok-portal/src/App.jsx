@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import Wisdom from "./pages/Wisdom";
 import Login from "./pages/Login";
 import SideSelection from "./pages/SideSelection";
 import UserType from "./pages/UserType";
@@ -16,6 +16,11 @@ import PaymentVerification from "./pages/PaymentVerification";
 import SkillSelection from "./pages/SkillSelection";
 import LocationSelection from "./pages/LocationSelection";
 import DepartmentSelection from "./pages/DepartmentSelection";
+import Home from "./pages/Home";
+import Ausxiliarie from "./pages/Auxiliaries"
+import Services from "./pages/Services";
+import Event from "./pages/Eventpage";
+import Resource from "./pages/Resource";
 
 
 
@@ -36,11 +41,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/wisdom" element={<Wisdom />} />
         <Route path="/" element={<Home />} />
-
+        <Route path="/ausxiliarie" element={<Ausxiliarie />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/login" element={<Login />} />
         <Route path="/side-selection" element={<SideSelection />} />
-        
+        <Route path="/event" element={<Event />} />
+        <Route path="/resource" element={<Resource />} />
 
         <Route path="/user-type" element={<UserType />} />
         <Route path="/register" element={<Register />} />

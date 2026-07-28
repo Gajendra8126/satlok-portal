@@ -17,3 +17,20 @@ html, body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+.swiper {
+  padding-bottom: 45px;
+}
+
+.swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  background: #d1d5db;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+  width: 22px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}

@@ -1,5 +1,5 @@
-import AuthLayout from "../Layout/AuthLayout";
-import SkillSelectionForm from "../components/Auth/SkillSelectionForm";
+import AuthLayout from "../layout/AuthLayout";
+import SkillSelectionForm from "../components/auth/SkillSelectionForm";
 
 export default function SkillSelection() {
   return (
