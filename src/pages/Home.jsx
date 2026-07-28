@@ -1,13 +1,9 @@
-import Hero from "../layout/Hero";
 import Header from "../layout/Header";
-// import FeatureHighlights from "../components/home/FeatureHighlights";
+import Hero from "../layout/Hero";
 import QuickLinks from "../components/home/QuickLinks";
-import AboutFoundation from "../components/home/AboutFoundation";
-import FoundationIntro from "../components/home/FoundationIntro";
+import BentoGrid from "../components/home/BentoGrid";
 import CausesSection from "../components/home/CausesSection";
-import VisionSection from "../components/home/VisionSection";
 import Testimonials from "../components/home/Testimonials";
-// import StatisticsSection from "../components/home/StatisticsSection";
 import JoinCards from "../components/home/JoinCards";
 import ExperienceGallery from "../components/home/ExperienceGallery";
 import QuoteSection from "../components/home/QuoteSection";
@@ -19,26 +15,15 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      {/* <FeatureHighlights /> */}
       <QuickLinks />
-
-       <AboutFoundation />
-       <FoundationIntro />
+      <BentoGrid />
       <CausesSection />
-
-      <VisionSection />
-
       <Testimonials />
-      <AboutFoundation />
-      {/* <StatisticsSection /> */}
-
+      <BentoGrid />
       <JoinCards />
-
       <ExperienceGallery />
-
       <QuoteSection />
-
-      <Faq />  
+      <Faq />
       <Footer />
     </>
   );

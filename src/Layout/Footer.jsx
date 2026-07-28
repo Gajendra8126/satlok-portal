@@ -10,7 +10,7 @@ export default function Footer() {
     },
     {
       title: "Wisdom",
-      links: ["Books", "Quotes", "Media", "Articles"],
+      links: ["Books", "Quotes", "Media", "Articles", "Prarthna(Beta)", "Explore OTT platform (coming soon)"],
     },
     {
       title: "Resources",
@@ -26,7 +26,7 @@ export default function Footer() {
       links: [
         "Term & Conditions",
         "Privacy Policy",
-        "Cookie Policy",
+        "Cookies Policy",
       ],
     },
   ];

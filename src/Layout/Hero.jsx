@@ -1,76 +1,51 @@
 export default function Hero() {
   return (
     <section
-      className="relative h-[500px] md:h-screen bg-cover bg-center"
+      className="relative h-[600px] md:h-[833px] bg-cover bg-center rounded-b-3xl overflow-hidden mt-[100px] mx-4 md:mx-auto max-w-[1440px]"
       style={{
-        backgroundImage: "url('/hero.jpg')", // Replace with your image
+        backgroundImage: "url('/hero.jpg')",
+        backgroundColor: "rgba(59, 59, 59, 0.5)"
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/25 md:bg-black/35" />
+      <div className="absolute inset-0 bg-black/40" />
 
-      {/* ================= MOBILE ================= */}
-      <div className="absolute inset-0 md:hidden flex items-end justify-center px-6 mb-10 ">
-        <div className="text-center text-white max-w-sm">
-          <h1
-            className="text-[28px] font-bold leading-tight drop-shadow-lg"
-            style={{ textShadow: "0 3px 8px rgba(0,0,0,.45)" }}
-          >
-            Path to the freedom
-            <br />
-            Path to the free
-          </h1>
-
-          <p
-            className="mt-3 text-[12px] leading-4 text-white/95"
-            style={{ textShadow: "0 2px 6px rgba(0,0,0,.4)" }}
-          >
-            Fostering well-being through breath,
-            meditation & yoga programs since
-            1981
-          </p>
-
-          <button className="mt-10 w-[143px] h-[45.54px] rounded-lg bg-white text-[#244D7D] text-[22px] font-medium shadow-lg">
-            Explore
-          </button>
+      {/* Content */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
+        
+        {/* 5 Circles */}
+        <div className="flex gap-4 md:gap-8 mb-6">
+          {[1, 2, 3, 4, 5].map((item) => (
+            <div key={item} className="w-12 h-12 md:w-16 md:h-16 bg-[#D9D9D9] rounded-full opacity-80 shadow-md"></div>
+          ))}
         </div>
-      </div>
 
-      {/* ================= DESKTOP ================= */}
-      <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 z-10 w-full px-6 justify-center">
-        <div className="flex flex-col items-center text-center text-white gap-6">
-          <div className="flex flex-col items-center gap-5">
-            <h1 className="text-[52px] lg:text-[46px] font-bold leading-tight">
-              Path to the freedom Path to the free
-            </h1>
+        {/* Heading */}
+        <h1 className="text-3xl md:text-[52px] font-bold leading-tight drop-shadow-lg mb-4 max-w-4xl">
+          Path to the freedom Path to the freedom
+        </h1>
 
-            <p className="max-w-3xl text-lg lg:text-xl text-white/90">
-              Fostering well-being through breath,
-              meditation & yoga programs since
-              1981
-            </p>
-          </div>
+        {/* Subtitle */}
+        <p className="text-sm md:text-lg text-white/90 max-w-2xl drop-shadow-md mb-8">
+          Fostering well-being through breath, meditation & yoga programs since 1982
+        </p>
 
-          <button
-            className="
-              mt-2
-              w-[120px]
-              h-[48px]
-              bg-white
-              text-[#001032]
-              text-[17px]
-              font-semibold
-              rounded-md
-              border border-[#E5E7EB]
-              shadow-[0_4px_12px_rgba(0,0,0,0.18)]
-              hover:shadow-[0_6px_18px_rgba(0,0,0,0.25)]
-              transition-all
-            "
-          >
-            Explore
-          </button>
-        </div>
+        {/* Button */}
+        <button
+          className="
+            px-8 py-3
+            bg-white
+            text-[#001032]
+            text-base md:text-[18px]
+            font-semibold
+            rounded-full
+            shadow-lg hover:shadow-xl
+            transition-all
+          "
+        >
+          Get started
+        </button>
       </div>
     </section>
   );
-}
+}
