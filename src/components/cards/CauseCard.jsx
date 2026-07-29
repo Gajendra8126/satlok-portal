@@ -4,13 +4,13 @@ export default function CauseCard({ title }) {
       {/* Image / Card background */}
       <div className="h-[402px] w-full bg-white/80 rounded-xl shadow-sm"></div>
 
-      {/* Divider */}
-      <div className="h-px w-full bg-black/20"></div>
-
       {/* Description */}
       <p className="text-[16px] font-light leading-[19px] text-black">
         {title}
       </p>
+      
+      {/* Divider */}
+      <div className="h-px w-full bg-black/20"></div>
     </div>
   );
 }

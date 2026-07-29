@@ -3,7 +3,6 @@ import QuickLinks from "../components/home/QuickLinks";
 import AboutFoundation from "../components/home/AboutFoundation";
 import FoundationIntro from "../components/home/FoundationIntro";
 import CausesSection from "../components/home/CausesSection";
-import VisionSection from "../components/home/VisionSection";
 import Testimonials from "../components/home/Testimonials";
 import JoinCards from "../components/home/JoinCards";
 import ExperienceGallery from "../components/home/ExperienceGallery";
@@ -18,8 +17,6 @@ export default function Home() {
       <QuickLinks />
       <AboutFoundation />
       <FoundationIntro />
-      <CausesSection />
-      <VisionSection />
       <Testimonials />
       <AboutFoundation />
       <JoinCards />

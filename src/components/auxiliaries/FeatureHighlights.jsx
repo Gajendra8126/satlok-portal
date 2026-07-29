@@ -76,7 +76,7 @@ export default function FeatureHighlights() {
 
         {/* ================= DESKTOP VIEW ================= */}
         <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 justify-items-center">
-          {features.map((item) => (
+          {features.map((item, index) => (
             <FeatureCard
               key={item.id}
               isTall={index === 0}
