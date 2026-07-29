@@ -8,7 +8,7 @@ import Events from "../components/auxiliaries/Events";
 import BentoGrid from "../components/home/BentoGrid";
 import QuoteSection from "../components/home/QuoteSection";
 import Faq from "../layout/Faq";
-
+import AboutFoundation from "../components/home/AboutFoundation";
 export default function Auxiliaries() {
   return (
     <>
