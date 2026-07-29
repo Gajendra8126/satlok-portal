@@ -19,7 +19,6 @@ export default function SupportCard() {
         <button className="bg-[#001032] text-white text-[13px] font-medium px-5 py-2.5 rounded-[8px] hover:opacity-90 transition-opacity shrink-0">
           Get Started
         </button>
-
       </div>
 
     </div>

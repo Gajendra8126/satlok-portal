@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ForgotPasswordForm() {
+    const navigate = useNavigate();
   return (
     <>
       {/* ================= Desktop ================= */}
@@ -41,7 +43,11 @@ export default function ForgotPasswordForm() {
           <div className="flex-1" />
 
           {/* Button */}
-          <button className="mt-10 h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]">
+          <button
+            type="button"
+            onClick={() => navigate("/otp-verification")}
+            className="mt-10 h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]"
+            >
             Continue
           </button>
         </div>
@@ -76,9 +82,12 @@ export default function ForgotPasswordForm() {
         </div>
 
         {/* Button */}
-        <button className="mt-40 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]"
-        >
-          Continue
+        <button
+            type="button"
+            onClick={() => navigate("/otp-verification")}
+            className="mt-40 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]"
+            >
+            Continue
         </button>
 
       </div>

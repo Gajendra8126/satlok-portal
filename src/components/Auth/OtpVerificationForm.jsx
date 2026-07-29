@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function OtpVerificationForm() {
   const inputRefs = useRef([]);
   const [otp, setOtp] = useState(["", "", "", "", ""]);
-
+  const navigate = useNavigate();
   const handleChange = (e, index) => {
     const value = e.target.value.replace(/[^0-9]/g, "");
 
@@ -77,7 +78,13 @@ export default function OtpVerificationForm() {
 
           <div className="flex-1" />
 
-          <button className="w-full h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]">
+          <button
+            type="button"
+            onClick={() => {
+            alert("clicked");
+            }}
+            className="w-full h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]"
+            >
             Continue
           </button>
 
@@ -96,8 +103,12 @@ export default function OtpVerificationForm() {
 
         {renderOtpBoxes(true)}
 
-        <button className="mt-47 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]">
-          Continue
+        <button
+            type="button"
+            onClick={() => navigate("/reset-password")}
+            className="mt-47 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]"
+            >
+            Continue
         </button>
 
       </div>

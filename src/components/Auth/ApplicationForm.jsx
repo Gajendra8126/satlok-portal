@@ -1,6 +1,8 @@
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ApplicationForm() {
+    const navigate = useNavigate();
   return (
     <>
       {/* ================= Desktop ================= */}
@@ -53,8 +55,12 @@ export default function ApplicationForm() {
               className="w-full h-9 rounded-md border border-[#E5E7EB] px-4 outline-none"
             />
 
-            <button className="mt-4 h-9 w-full rounded-md bg-[#081B49] text-white">
-              Continue
+            <button
+                type="button"
+                onClick={() => navigate("/payment-verification")}
+                className="mt-4 h-9 w-full rounded-md bg-[#081B49] text-white"
+                >
+                Continue
             </button>
           </form>
         </div>
@@ -105,7 +111,11 @@ export default function ApplicationForm() {
             className="w-full h-9 rounded-[8px] border border-[#E5E7EB] px-4 text-xs outline-none"
           />
 
-          <button className="mt-13 w-full h-8 rounded-[8px] bg-[#081B49] text-white text-[16px] font-medium">
+          <button
+            type="button"
+            onClick={() => navigate("/payment-verification")}
+            className="mt-13 w-full h-8 rounded-[8px] bg-[#081B49] text-white text-[16px] font-medium"
+            >
             Continue
           </button>
         </form>

@@ -79,9 +79,10 @@ export default function FeatureHighlights() {
           {features.map((item) => (
             <FeatureCard
               key={item.id}
+              isTall={index === 0}
               title={
-                item.title.split("\n").map((line, index) => (
-                  <span key={index}>
+                item.title.split("\n").map((line, i) => (
+                  <span key={i}>
                     {line}
                     <br />
                   </span>

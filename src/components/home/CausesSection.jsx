@@ -2,10 +2,10 @@ import CauseCard from "../cards/CauseCard";
 
 export default function CausesSection() {
   const causes = [
-    "You're building something real and ready to scale",
-    "You're building something real and ready to scale",
-    "You're building something real and ready to scale",
-    "You're building something real and ready to scale",
+    "You’re building something real and ready to scale",
+    "You’re building something real and ready to scale",
+    "You’re building something real and ready to scale",
+    "You’re building something real and ready to scale",
   ];
 
   return (
@@ -26,18 +26,22 @@ export default function CausesSection() {
           Fostering well-being through breath,<br /> meditation & yoga programs since 1982
         </h2>
 
-        {/* Top Divider */}
-        <div className="mt-6 h-px bg-[#C3BFFF]" />
+        {/* Search/Pill bar */}
+        <div className="w-full max-w-[1261px] h-[60px] bg-white/80 rounded-full mb-16"></div>
 
-        {/* Cards */}
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {causes.map((cause, index) => (
-            <CauseCard key={index} title={cause} />
-          ))}
+        {/* Causes Heading */}
+        <div className="w-full max-w-[1261px]">
+          <h3 className="text-[32px] md:text-[46px] font-medium text-black mb-8">
+            Causes we are working on
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {causes.map((cause, index) => (
+              <CauseCard key={index} title={cause} />
+            ))}
+          </div>
         </div>
 
-        {/* Bottom Divider */}
-        <div className="mt-8 h-px bg-[#C3BFFF]" />
       </div>
     </section>
   );

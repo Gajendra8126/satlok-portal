@@ -1,10 +1,8 @@
 import Footer from "../layout/Footer";
 
 import Hero from "../layout/Hero";
-import AboutFoundation from "../components/home/AboutFoundation";
-
-import AboutSection from "../components/auxiliaries/AboutSection";
 import FeatureHighlights from "../components/auxiliaries/FeatureHighlights";
+import AboutSection from "../components/auxiliaries/AboutSection";
 import SupportCauses from "../components/auxiliaries/SupportCauses";
 import Events from "../components/auxiliaries/Events";
 import BentoGrid from "../components/home/BentoGrid";
