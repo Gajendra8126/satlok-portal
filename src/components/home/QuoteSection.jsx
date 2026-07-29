@@ -1,27 +1,26 @@
-export default function QuoteSection() {
+export default function QuoteSection({ color = "#000000", textColor = "white" }) {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="w-[480px] h-[430px] rounded-[24px] bg-[#FFF6DE] p-8 flex flex-col justify-between">
-
-          {/* Top Text */}
-          <p className="text-[17px] leading-[34px] font-medium text-[#111111]">
-            We’ve been through it — chasing gurus, wasting
-            time on following wrong paths, trusting fake
-            gurus who never aligned us with the almighty.
+    <section className="py-16 px-6">
+      <div className="max-w-[1440px] mx-auto">
+        <div 
+          className="rounded-[12px] min-h-[402px] flex flex-col justify-between p-6 md:px-[42px] md:py-[47px] opacity-80 overflow-hidden"
+          style={{ background: `linear-gradient(270deg, #FFFFFF 41.35%, ${color} 100%)` }}
+        >
+          {/* Top Text (Long) */}
+          <p 
+            className="text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] font-medium max-w-[40%]" 
+            style={{ color: textColor }}
+          >
+            We’ve been through it — chasing gurus, wasting time on following wrong paths, trusting fake gurus who never aligned us with the almighty.
           </p>
 
-          {/* Bottom Text */}
-          <div>
-            <h3 className="text-[20px] font-semibold text-[#111111]">
-              We’ve been through it
-            </h3>
-
-            <p className="text-[20px] font-medium text-[#111111] mt-1">
-              — chasing gurus
-            </p>
-          </div>
-
+          {/* Bottom Text (Short) */}
+          <p 
+            className="text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] font-medium max-w-[40%] mt-8 md:mt-0" 
+            style={{ color: textColor }}
+          >
+            We’ve been through it <br />— chasing gurus
+          </p>
         </div>
       </div>
     </section>

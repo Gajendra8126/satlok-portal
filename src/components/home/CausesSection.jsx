@@ -9,11 +9,21 @@ export default function CausesSection() {
   ];
 
   return (
-    <section className="bg-[#D9D7FF] pb-8">
-      <div className="mx-auto max-w-7xl rounded-b-xl px-6 py-8">
-        {/* Heading */}
-        <h2 className="text-[36px] font-semibold text-[#001032]">
-          Causes we are working on
+    <section className="mx-4 md:mx-auto max-w-[1440px] mt-16 rounded-[20px] shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+      style={{
+        background: "linear-gradient(180deg, #D5D4FF 90.87%, #807F99 100%)",
+        minHeight: "1534px"
+      }}
+    >
+      <div className="flex flex-col items-center pt-24 pb-16 px-6">
+        
+        {/* Headings */}
+        <h1 className="text-[32px] md:text-[44px] font-bold text-[#001032] text-center mb-6">
+          Path to the freedom
+        </h1>
+        
+        <h2 className="text-[20px] md:text-[28px] font-normal text-black text-center max-w-3xl mb-16 leading-tight">
+          Fostering well-being through breath,<br /> meditation & yoga programs since 1982
         </h2>
 
         {/* Top Divider */}

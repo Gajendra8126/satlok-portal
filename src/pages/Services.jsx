@@ -1,4 +1,3 @@
-import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 
 import Hero from "../layout/Hero";
@@ -13,7 +12,6 @@ import Faq from "../layout/Faq";
 export default function Services() {
   return (
     <>
-      <Header />
 
       <main>
         <Hero />

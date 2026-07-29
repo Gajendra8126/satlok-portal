@@ -1,4 +1,3 @@
-import Header from "../layout/Header";
 import Hero from "../layout/Hero";
 import Knowledge from "../components/Knowledge/Knowledge";
 import Media from "../components/Media/Media";
@@ -10,7 +9,6 @@ import Footer from "../layout/Footer";
 export default function Wisdom() {
   return (
     <div className="min-h-screen w-full bg-white overflow-x-hidden">
-      <Header />
       <main>
         <Hero />
         <Knowledge />

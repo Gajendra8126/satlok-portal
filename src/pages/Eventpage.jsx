@@ -1,4 +1,3 @@
-import Header from "../layout/Header";
 import Footer from "../layout/Footer";
 import AboutFoundation from "../components/home/AboutFoundation";
 import Hero from "../layout/Hero";
@@ -14,7 +13,6 @@ import Faq from "../layout/Faq";
 export default function Eventpage() {
   return (
     <>
-      <Header />
 
       <main>
 

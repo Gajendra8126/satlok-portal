@@ -258,7 +258,7 @@ export default function Header() {
             /* ─── Expanded: full dropdown view ──────────────── */
             <NavDropdown
               navKey={mobileActiveNav}
-              onClose={closeMobileMenu}
+              onClose={() => setMobileActiveNav(null)}
               isMobile={true}
             />
           )}
