@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function PaymentVerificationForm() {
   const [transactionId, setTransactionId] = useState("");
+  const navigate = useNavigate();
 
   return (
     <>
@@ -50,8 +52,10 @@ export default function PaymentVerificationForm() {
 
           {/* Button */}
           <button
-            className="mt-3  h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]"
-          >
+            type="button"
+            onClick={() => navigate("/request-submitted")}
+            className="mt-3 h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]"
+            >
             Continue
           </button>
 
@@ -90,9 +94,11 @@ export default function PaymentVerificationForm() {
 
         {/* Continue */}
         <button
-          className="mt-55 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]"
-        >
-          Continue
+            type="button"
+            onClick={() => navigate("/request-submitted")}
+            className="mt-55 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px]"
+            >
+            Continue
         </button>
 
       </div>

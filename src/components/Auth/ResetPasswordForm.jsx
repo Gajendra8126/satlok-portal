@@ -1,9 +1,10 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ResetPasswordForm() {
   const [logoutAll, setLogoutAll] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <>
       {/* ================= Desktop ================= */}
@@ -71,10 +72,13 @@ export default function ResetPasswordForm() {
 
           {/* Button */}
           
-          <button className=" w-full h-10 rounded-lg bg-[#081B49] text-white"
-        >
-          Reset your password
-        </button>
+         <button
+            type="button"
+            onClick={() => navigate("/password-reset-success")}
+            className="w-full h-10 rounded-lg bg-[#081B49] text-white"
+            >
+            Reset your password
+         </button>
         </div>
       </div>
 
@@ -126,8 +130,12 @@ export default function ResetPasswordForm() {
           </span>
         </label>
 
-        <button className="mt-13 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px] font-medium">
-          Reset your password
+        <button
+            type="button"
+            onClick={() => navigate("/password-reset-success")}
+            className="mt-13 w-full h-8 rounded-lg bg-[#081B49] text-white text-[10px] font-medium"
+            >
+            Reset your password
         </button>
 
       </div>

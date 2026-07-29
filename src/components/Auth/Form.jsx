@@ -63,7 +63,7 @@ export default function LoginForm() {
             </div>
 
             <button
-              onClick={() => navigate("/side-selection")}
+              onClick={() => navigate("/register")}
               className="mt-5 w-full h-10 rounded-md bg-[#081B49] text-white"
             >
               Log in
@@ -74,7 +74,10 @@ export default function LoginForm() {
             </button>
 
             <div className="mt-2 flex justify-end">
-              <button className="text-[12px] text-[#081B49]">
+              <button
+                onClick={() => navigate("/forgot-password")}
+                className="text-[12px] text-[#081B49]"
+                >
                 Forgot Password?
               </button>
             </div>
@@ -157,7 +160,7 @@ export default function LoginForm() {
           {/* Buttons */}
 
           <button
-            onClick={() => navigate("/side-selection")}
+            onClick={() => navigate("/register")}
             className="mt-3 w-full h-8 rounded-md bg-[#081B49] text-[10px] text-white"
           >
             Log in
@@ -168,8 +171,11 @@ export default function LoginForm() {
           </button>
 
           <div className="mt-2 mr-3 flex justify-end">
-            <button className="text-[12px] text-[#081B49]">
-              Forgot Password?
+            <button
+                onClick={() => navigate("/forgot-password")}
+                className="text-[12px] text-[#081B49]"
+                >
+                Forgot Password?
             </button>
           </div>
 
