@@ -80,9 +80,8 @@ export default function OtpVerificationForm() {
 
           <button
             type="button"
-            onClick={() => {
-            alert("clicked");
-            }}
+            onClick={() => navigate("/reset-password")}
+            
             className="w-full h-10 rounded-md bg-[#081B49] text-white hover:bg-[#10285d]"
             >
             Continue
