@@ -28,13 +28,14 @@ export default function FeatureHighlights() {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-y-12 justify-items-center">
-          {features.map((item) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-12 justify-items-center">
+          {features.map((item, index) => (
             <FeatureCard
               key={item.id}
+              isTall={index === 0}
               title={
-                item.title.split("\n").map((line, index) => (
-                  <span key={index}>
+                item.title.split("\n").map((line, i) => (
+                  <span key={i}>
                     {line}
                     <br />
                   </span>

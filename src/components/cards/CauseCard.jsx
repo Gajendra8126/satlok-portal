@@ -1,11 +1,14 @@
 export default function CauseCard({ title }) {
   return (
-    <div className="flex flex-col">
-      {/* Image */}
-      <div className="h-[220px] w-full rounded-lg bg-white shadow-sm"></div>
+    <div className="flex flex-col gap-6">
+      {/* Image / Card background */}
+      <div className="h-[402px] w-full bg-white/80 rounded-xl shadow-sm"></div>
+
+      {/* Divider */}
+      <div className="h-px w-full bg-black/20"></div>
 
       {/* Description */}
-      <p className="mt-4 text-[12px] leading-5 text-[#5C5C5C]">
+      <p className="text-[16px] font-light leading-[19px] text-black">
         {title}
       </p>
     </div>

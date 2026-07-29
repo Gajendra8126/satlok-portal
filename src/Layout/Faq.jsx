@@ -4,6 +4,11 @@ import { ChevronDown } from "lucide-react";
 
 const faqData = [
   {
+    question: "Is this just another agency trying to sell me stuff?",
+    answer:
+      "No, we are focused solely on providing value and helping you on your journey.",
+  },
+  {
     question: "Who's behind this platform?",
     answer:
       "This platform is built and maintained by the Satlok Ashram Foundation, dedicated to spreading the true spiritual knowledge of Sant Rampal Ji Maharaj to seekers worldwide.",
